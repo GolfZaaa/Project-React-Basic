@@ -1,12 +1,12 @@
 import Login from '../pages/Login'
 import Register from '../pages/Register'
 import ProductDetail from '../pages/ProductDetail'
-import ShopCatgory from '../pages/ShopCatgory'
 import Home from '../pages/Home'
 import Cart from '../pages/Cart'
 import Contact from '../pages/Contact'
-import Team from '../pages/Team'
+import Products from '../pages/Products'
 import { SideBarPrivate } from '../layout/private/SideBar.Private'
+import SingleProduct from '../pages/SingleProduct'
 
 export const PublicRoute = [
     {
@@ -26,8 +26,8 @@ export const PublicRoute = [
     },
     {
         id: '4',
-        path: '/ShopCatgory',
-        element: <ShopCatgory />,
+        path: '/products',
+        element: <Products />,
     },
     {
         id: '5',
@@ -46,8 +46,8 @@ export const PublicRoute = [
     },
     {
         id: '8',
-        path: '/team',
-        element: <Team />,
+        path: '/products/:productId',
+        element: <SingleProduct />,
     },
     {
         id: '9',

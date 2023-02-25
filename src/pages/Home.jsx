@@ -2,8 +2,8 @@ import React from "react";
 import imgHero from '../assets/img/hero-img.svg'
 import Service from "./Contact";
 import Portfolio from "./Cart";
-import FAQ from './ShopCatgory'
-import Team from './Team'
+import FAQ from './Products'
+import Team from './SingleProduct'
 import Clients from "./Register";
 import Contact from "./ProductDetail";
 import About from './Login'

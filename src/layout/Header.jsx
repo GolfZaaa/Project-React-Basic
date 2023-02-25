@@ -33,7 +33,7 @@ const Header = () => {
                 </li>
                 <li className="nav-item submenu dropdown">
                   <a
-                    href="#"
+                    href="/products"
                     className="nav-link dropdown-toggle"
                     data-toggle="dropdown"
                     role="button"
@@ -44,16 +44,13 @@ const Header = () => {
                   </a>
                   <ul className="dropdown-menu">
                     <li className="nav-item">
-                    <NavLink className="nav-link scrollto" to='/ShopCatgory' >Shop Category</NavLink>
-                    </li>
-                    <li className="nav-item">
-                <NavLink className="nav-link scrollto" to='/ProductDetail' >ProductDeill</NavLink>
+                    <NavLink className="nav-link scrollto" to='/Products' >Product</NavLink>
                     </li>
                   </ul>
                 </li>
                 <li className="nav-item submenu dropdown">
                   <a
-                    href="#"
+                    href="Login"
                     className="nav-link dropdown-toggle"
                     data-toggle="dropdown"
                     role="button"
@@ -87,8 +84,8 @@ const Header = () => {
                   </NavLink>
                 </li>
                 <li className="nav-item">
-                <NavLink className="nav-link scrollto" to='/ShopCatgory' >
-                  <a className="button button-header" href="#">
+                <NavLink className="nav-link scrollto" to='/products' >
+                  <a className="button button-header" href="/products">
                     Buy Now &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                   </a>
                   </NavLink>
