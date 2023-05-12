@@ -1,0 +1,531 @@
+.buttonCustom{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    align-items: end;
+    left: 20px;
+    position: relative;
+}
+
+.Create{
+    position: relative;
+    left:330px;
+    font-weight: 600;
+    margin:30px;
+}
+
+.button{
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+
+.cardlistproduct{
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1100px;
+    height: 600px;
+    left: 140px;
+    position: relative;
+    top: 60px;
+    margin-bottom: 130px;
+    box-shadow: 10px 10px 5px lightblue;
+    border: 3px solid rgb(117, 117, 117);
+}
+
+.namecate{
+    position: relative;
+    left: 130px;
+    margin-bottom: 60px;
+}
+
+.inputarea{
+    width: 720px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+
+.Createlistproduct button {
+    --color: #0b06ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    position: absolute;
+    margin-left: -90px;
+    bottom: -65px;
+   }
+   
+   .Createlistproduct button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 30%;
+   }
+   
+   .Createlistproduct button:hover {
+    color: #fff;
+   }
+   
+   .Createlistproduct button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .Createlistproduct button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .Createlistproduct button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+   
+
+   .Updatelistproduct button {
+    --color: #009dff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    position: absolute;
+    margin-left: 700px;
+    bottom: -65px;
+   }
+   
+   .Updatelistproduct button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 30%;
+   }
+   
+   .Updatelistproduct button:hover {
+    color: #fff;
+   }
+   
+   .Updatelistproduct button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .Updatelistproduct button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .Updatelistproduct button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+
+   
+
+
+   .Backlistproduct button {
+    --color: #ff0000;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    position: absolute;
+   }
+   
+   .Backlistproduct button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 30%;
+   }
+   
+   .Backlistproduct button:hover {
+    color: #fff;
+   }
+   
+   .Backlistproduct button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .Backlistproduct button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .Backlistproduct button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+
+   .CreateProductlist button {
+    --color: #0000ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    position: absolute;
+    margin-left: 1200px;
+    bottom: 615px;
+
+   }
+   
+   .CreateProductlist button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 30%;
+   }
+   
+   .CreateProductlist button:hover {
+    color: #fff;
+   }
+   
+   .CreateProductlist button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .CreateProductlist button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .CreateProductlist button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+
+
+   table, th, td {
+    border: 1px solid rgba(0, 0, 0, 0.222);
+  }
+
+.Settinglist{
+    position: relative;
+    left: 120px;
+}
+
+.backgroundtable{
+    position: relative;
+    left: 50px;
+    top: 140px;
+    margin-bottom: 30px;
+}
+
+.textListProduct{
+    font-size: 30px;
+    position: absolute;
+    margin-top: 120px;
+    left: 165px;
+}
+
+
+
+
+.download-buttonProduct {
+    position: relative;
+    border-width: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+    left: 1250px;
+    top: 120px;
+   }
+   
+   .download-buttonProduct .docsProduct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: #242a35;
+    border: solid 1px #e8e8e82d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-buttonProduct:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   
+   .downloadProduct {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: #01e056;
+    border: solid 1px #01e0572d;
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-buttonProduct:hover .downloadProduct {
+    transform: translateY(100%)
+   }
+   
+   .downloadProduct svg polyline,.downloadProduct svg line {
+    animation: docsProduct 1s infinite;
+   }
+   
+   @keyframes docsProduct {
+    0% {
+     transform: translateY(0%);
+    }
+   
+    50% {
+     transform: translateY(-15%);
+    }
+   
+    100% {
+     transform: translateY(0%);
+    }
+   }
+
+
+.buttonedit{
+    position: relative;
+    left: 50px;
+    color: #fff;
+}
+
+.buttondelete{
+    position: relative;
+    left: 115px;
+}
+
+
+
+
+
+
+.noselectEdit {
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #40dc02;
+    position: relative;
+    font-size: 15px;
+    bottom: -10px;
+    left: 0px;
+    margin-left: 10px;
+   }
+   .noselectEdit, button span {
+    transition: 200ms;
+   }
+
+   .noselectEdit .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+
+   .noselectEdit .icon {
+    position: relative;
+    border-left: 1px solid #000000;
+    transform: translateX(110px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    right: 40px;
+   }
+
+
+   .noselectEdit svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .noselectEdit:hover {
+    background: #1cfc04;
+   }
+   
+   .noselectEdit:hover .text {
+    color: transparent;
+   }
+   
+   .noselectEdit:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+    left: -10px;
+   }
+   
+   .noselectEdit:focus {
+    outline: none;
+   }
+   
+   .noselectEdit:active .icon svg {
+    transform: scale(0.8);
+   }
+   
+
+
+
+   
+.noselect {
+    width: 130px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background: red;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.15);
+    background: #e62222;
+    position: relative;
+    font-size: 15px;
+    bottom: 30px;
+    left: 150px;
+   }
+   .noselect, button span {
+    transition: 200ms;
+   }
+
+   .noselect .text {
+    transform: translateX(35px);
+    color: white;
+    font-weight: bold;
+   }
+
+   .noselect .icon {
+    position: relative;
+    border-left: 1px solid #000000;
+    transform: translateX(110px);
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    right: 50px;
+   }
+
+
+   .noselect svg {
+    width: 15px;
+    fill: #eee;
+   }
+   
+   .noselect:hover {
+    background: #ff3636;
+   }
+   
+   .noselect:hover .text {
+    color: transparent;
+   }
+   
+   .noselect:hover .icon {
+    width: 150px;
+    border-left: none;
+    transform: translateX(0);
+    left: -20px;
+   }
+   
+   .noselect:focus {
+    outline: none;
+   }
+   
+   .noselect:active .icon svg {
+    transform: scale(0.8);
+   }
+   
+
+
+.IconEdit{
+    color: #fff;
+    width: 20px;
+    height: 20px;
+}

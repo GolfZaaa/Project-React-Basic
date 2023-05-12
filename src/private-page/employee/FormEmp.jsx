@@ -6,6 +6,7 @@ import Dropzone from "react-dropzone";
 import "react-datepicker/dist/react-datepicker.css";
 import DatePicker from "react-datepicker";
 import { BsCalendarDate } from "react-icons/bs";
+import '../../css/FormEmp.css'
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -21,10 +22,17 @@ function FormEmp() {
       <div className="row">
         <div className="form-group col-md-12 text-left">
           <NavLink to={-1}>
-            <button type="button" className="btn btn-outline-primary">
+            <button type="button" className="btn btn-outline-danger">
               ย้อนกลับ
             </button>
           </NavLink>
+          <div className="form-group col-md-12 text-right ">
+          <NavLink to={"/"}>
+            <button type="button" className="btn btn-outline-primary buttonposition">
+              สร้าง
+            </button>
+          </NavLink>
+        </div>
         </div>
       </div>
       <div className="card">
@@ -77,7 +85,18 @@ function FormEmp() {
                   </div>
                   <div className="row col-9">
                     <div className="form-group col-md-4">
-                      <label htmlFor="name">คำนำหน้าชื่อ(TH)</label>
+                      <label htmlFor="name">ชื่อสินค้า</label>
+                      <input
+                        type="text"
+                        name="name"
+                        className={
+                          "form-control" +
+                          (errors.name && touched.name ? " is-invalid" : "")
+                        }
+                      />
+                    </div>
+                    <div className="form-group col-md-4">
+                      <label htmlFor="name">ประเภทสินค้า</label>
                       <Select
                         defaultValue={selectedOption}
                         onChange={setSelectedOption}
@@ -85,7 +104,7 @@ function FormEmp() {
                       />
                     </div>
                     <div className="form-group col-md-4">
-                      <label htmlFor="name">ชื่อ(TH)</label>
+                      <label htmlFor="name">ราคา</label>
                       <input
                         type="text"
                         name="name"
@@ -96,7 +115,7 @@ function FormEmp() {
                       />
                     </div>
                     <div className="form-group col-md-4">
-                      <label htmlFor="name">นามสกุล(TH)</label>
+                      <label htmlFor="name">จำนวนสินค้า</label>
                       <input
                         type="text"
                         name="name"
@@ -106,83 +125,8 @@ function FormEmp() {
                         }
                       />
                     </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">คำนำหน้าชื่อ(EN)</label>
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                      />
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">ชื่อ(EN)</label>
-                      <input
-                        type="text"
-                        name="name"
-                        className={
-                          "form-control" +
-                          (errors.name && touched.name ? " is-invalid" : "")
-                        }
-                      />
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">นามสกุล(EN)</label>
-                      <input
-                        type="text"
-                        name="name"
-                        className={
-                          "form-control" +
-                          (errors.name && touched.name ? " is-invalid" : "")
-                        }
-                      />
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">วันเดือนปีเกิด</label>
-                      <DatePicker
-                        className={
-                          "form-control" +
-                          (errors.name && touched.name ? " is-invalid" : "")
-                        }
-                        type="text"
-                        selected={startDate}
-                        onChange={(date) => setStartDate(date)}
-                      />
-                      <div style={{ position: "absolute", right: 23, top: 36 }}>
-                        <BsCalendarDate size={20} />
-                      </div>
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">อายุ</label>
-                      <input
-                        type="text"
-                        name="name"
-                        className={
-                          "form-control" +
-                          (errors.name && touched.name ? " is-invalid" : "")
-                        }
-                      />
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">สัญชาติ</label>
-                      <Select
-                        defaultValue={selectedOption}
-                        onChange={setSelectedOption}
-                        options={options}
-                      />
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">โทรศัพท์มือถือ</label>
-                      <input
-                        type="text"
-                        name="name"
-                        className={
-                          "form-control" +
-                          (errors.name && touched.name ? " is-invalid" : "")
-                        }
-                      />
-                    </div>
-                    <div className="form-group col-md-4">
-                      <label htmlFor="name">อีเมล</label>
+                    <div className="form-group col-md-16">
+                      <label htmlFor="name">รายละเอียดสินค้า</label>
                       <input
                         type="text"
                         name="name"
@@ -199,172 +143,7 @@ function FormEmp() {
           </Formik>
         </div>
       </div>
-      <div className="card">
-        <div className="card-header">ส่วนที่ 1.1 :: ข้อมูลปัจจุบัน</div>
-        <div className="card-body">
-          <Formik
-            enableReinitialize={true}
-            initialValues={{
-              name: "",
-              email: "",
-              subject: "",
-              message: "",
-              phoneNumber: "",
-              status: "",
-            }}
-            onSubmit={(values) => {
-              let data = { ...values };
-              console.log("data : " + JSON.stringify(data));
-            }}
-          >
-            {({
-              values,
-              errors,
-              touched,
-              handleChange,
-              handleBlur,
-              handleSubmit,
-              isSubmitting,
-              setFieldValue,
-              /* and other goodies */
-            }) => (
-              <Form onSubmit={handleSubmit} className="php-email-form">
-                <div className="row">
-                  <div className="form-group col-md-2">
-                    <label htmlFor="name">เลขที่</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-2">
-                    <label htmlFor="name">หมู่ที่</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">หมู่บ้าน/อาคาร</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ชั้น</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ตรอก/ซอย</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ถนน</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ค้นหาที่อยู่</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                      placeholder="-ค้นหาที่อยู่-"
-                    />
-                  </div>
 
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">
-                      ตำบล/อำเภอ/จังหวัด/รหัสไปรษณีย์
-                    </label>
-                    <input
-                      type="text"
-                      name="name"
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ตำแหน่งงาน</label>
-                    <Select
-                      defaultValue={selectedOption}
-                      onChange={setSelectedOption}
-                      options={options}
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ชื่อโครงการ</label>
-                    <Select
-                      defaultValue={selectedOption}
-                      onChange={setSelectedOption}
-                      options={options}
-                    />
-                  </div>
-                </div>
-              </Form>
-            )}
-          </Formik>
-        </div>
-      </div>
     </>
   );
 }

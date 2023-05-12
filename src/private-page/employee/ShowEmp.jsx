@@ -1,7 +1,12 @@
 import React, { Fragment, useState } from "react";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Field, ErrorMessage } from "formik";
 import Select from "react-select";
 import { Link, NavLink } from "react-router-dom";
+import InputGroup from "react-bootstrap/InputGroup";
+import Form from "react-bootstrap/Form";
+import { Container } from "react-bootstrap";
+import { datatable } from "../../datatable.js";
+import Table from 'react-bootstrap/Table'
 
 const options = [
   { value: "chocolate", label: "Chocolate" },
@@ -12,90 +17,65 @@ const options = [
 function ShowEmp() {
   const [selectedOption, setSelectedOption] = useState(null);
 
+  const [search, setSearch] = useState("");
+
   return (
-    <Fragment>
-      <div className="row">
+
+    <>
+          <div className="row">
         <div className="form-group col-md-12 text-right">
-          <NavLink to="/formEmp">
+          <NavLink to="/ListProduct">
             <button type="button" className="btn btn-outline-primary">
-              เพิ่มใหม่
+              Create
             </button>
           </NavLink>
         </div>
       </div>
-      <div className="card">
-        <div className="card-header">ค้นหาข้อมูล</div>
-        <div className="card-body">
-          <Formik
-            enableReinitialize={true}
-            initialValues={{
-              name: "",
-              email: "",
-              subject: "",
-              message: "",
-              phoneNumber: "",
-              status: "",
-            }}
-            onSubmit={(values) => {
-              let data = { ...values };
-              console.log("data : " + JSON.stringify(data));
-            }}
-          >
-            {({
-              values,
-              errors,
-              touched,
-              handleChange,
-              handleBlur,
-              handleSubmit,
-              isSubmitting,
-              setFieldValue,
-              /* and other goodies */
-            }) => (
-              <Form onSubmit={handleSubmit} className="php-email-form">
-                <div className="row">
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ชื่อ-นามสกุล</label>
-                    <input
-                      type="text"
-                      name="name"
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      value={values.name}
-                      className={
-                        "form-control" +
-                        (errors.name && touched.name ? " is-invalid" : "")
-                      }
-                      placeholder="ชื่อ-สกุล"
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">ตำแหน่ง</label>
-                    <Select
-                      defaultValue={selectedOption}
-                      onChange={setSelectedOption}
-                      options={options}
-                    />
-                  </div>
-                  <div className="form-group col-md-4">
-                    <label htmlFor="name">โครงการ</label>
-                    <Select
-                      defaultValue={selectedOption}
-                      onChange={setSelectedOption}
-                      options={options}
-                    />
-                  </div>
-                </div>
-                <div className="form-group text-center">
-                  <button type="submit">Submit</button>{" "}
-                  <button type="reset">Reset</button>
-                </div>
-              </Form>
-            )}
-          </Formik>
-        </div>
+
+      <div className="App" >
+        <Container>
+          <h1 className="text-center mt-4">ListProduct</h1>
+          <Form>
+            <InputGroup className="my-3">
+              <Form.Control
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Search contacts"
+              />
+            </InputGroup>
+          </Form>
+          <Table class="table table-bordered" >
+            <thead>
+              <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>QuantityTotal</th>
+              </tr>
+            </thead>
+            <tbody>
+              {datatable
+                .filter((item) => {
+                  return search.toLowerCase() === ""
+                    ? item
+                    : item.name.toLowerCase().includes(search);
+                })
+                .map((item) => (
+                  <tr key={item.id}>
+                    <td>{item.id}</td>
+                    <td>{item.name}</td>
+                    <td>{item.category}</td>
+                    <td>{item.price}</td>
+                    <td>{item.Quantity}</td>
+                    <td>{item.QuantityTotal}</td>
+                  </tr>
+                ))}
+            </tbody>
+          </Table>
+        </Container>
       </div>
-    </Fragment>
+    </>
   );
 }
 

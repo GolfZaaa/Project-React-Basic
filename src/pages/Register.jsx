@@ -1,10 +1,11 @@
 import React from "react";
 import { Formik } from "formik";
+import "../../src/css/Register.css";
 
 const Register = () => {
-    return (
-        <>
-            <section className="login_box_area section-margin">
+  return (
+    <>
+      {/* <section className="login_box_area section-margin">
           <div className="container">
             <div className="row">
               <div className="col-lg-6">
@@ -68,7 +69,6 @@ const Register = () => {
                       handleBlur,
                       handleSubmit,
                       isSubmitting,
-                      /* and other goodies */
                     }) => (
                       <form
                         onSubmit={handleSubmit}
@@ -166,9 +166,39 @@ const Register = () => {
               </div>
             </div>
           </div>
-        </section>
-        </>
-    )
-}
+        </section> */}
+
+      <div className="containerregister">
+        <div className="cardregister">
+          <a className="singup">Create Account</a>
+          <div className="inputBox1regis">
+            <input type="text" required="required" />
+            <span className="user">Email</span>
+          </div>
+          <div className="inputBoxregis">
+            <input type="text" required="required" />
+            <span>Username</span>
+          </div>
+          <div className="inputBoxregis">
+            <input type="password" required="required" />
+            <span>Password</span>
+          </div>
+
+
+          <label className="container">
+            <input defaultChecked="checked" type="checkbox" className="inputregister" />
+            <div className="checkmark" />
+          </label>
+
+
+          <span className="register">I agree all statements in Terms of service</span>
+
+          <button className="enterregis">SIGN UP</button>
+          <a className="Loginnow" href="/Login">Have already an account ? Login here</a>
+        </div>
+      </div>
+    </>
+  );
+};
 
 export default Register;

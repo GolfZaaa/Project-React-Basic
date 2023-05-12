@@ -1,0 +1,137 @@
+.rowCheck {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    margin: 0 -16px;
+  }
+  .col-25Check {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+  }
+  .col-50Check {
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+  }
+  .col-75Check {
+    -ms-flex: 75%; /* IE10 */
+    flex: 75%;
+  }
+  .col-25Check,
+.col-50Check,
+.col-75Check {
+  padding: 0 16px;
+}
+
+.containerCheck {
+    background-color: #f2f2f2;
+    padding: 5px 20px 15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 3px;
+    width: 80%;
+    position: relative;
+    left: 170px;
+    margin-bottom: 30px;
+  }
+  .containerCheck input[type=text] {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  .containerCheck label {
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  .icon-containerCheck {
+    margin-bottom: 20px;
+    padding: 7px 0;
+    font-size: 24px;
+  }
+
+  .iconcheck1{
+    margin-right: 20px;
+  }
+
+  .btnCheck {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    width: 1170px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 17px;
+    position: relative;
+  }
+  .btnCheck:hover {
+    background-color: #45a049;
+  }
+
+  span.price {
+    float: right;
+    color: grey;
+  }
+  
+  @media (max-width: 800px) {
+    .row {
+      flex-direction: column-reverse;
+    }
+    .col-25 {
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .Checkoutsubmit button {
+    --color: #560bad;
+    font-family: inherit;
+    display: inline-block;
+    width: 1170px;
+    height: 3em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 22px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    right: 20px;
+   }
+   
+   .Checkoutsubmit button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 11200px;
+    border-radius: 100px;
+   }
+   
+   .Checkoutsubmit button:hover {
+    color: #fff;
+   }
+   
+   .Checkoutsubmit button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .Checkoutsubmit button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .Checkoutsubmit button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }

@@ -1,0 +1,174 @@
+
+.cardDash1 {
+    box-sizing: border-box;
+    width: 280px;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  
+  .cardDash1:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cardDash1:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  
+.cardDash2 {
+    box-sizing: border-box;
+    width: 280px;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  
+  .cardDash2:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cardDash2:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .cardDash3 {
+    box-sizing: border-box;
+    width: 280px;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  
+  .cardDash3:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cardDash3:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  .cardDash4 {
+    box-sizing: border-box;
+    width: 280px;
+    height: 160px;
+    background: rgba(255, 255, 255, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+  
+  .cardDash4:hover {
+    border: 1px solid black;
+    transform: scale(1.05);
+  }
+  
+  .cardDash4:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+
+.textcard1{
+    right: 50px;
+    position: relative;
+
+}
+
+.textcard2{
+    position: relative;
+    right: 50px;
+}
+
+.textcard3{
+    position: relative;
+    right: 50px;
+}
+.textcard4{
+    position: relative;
+    right: 40px;
+}
+
+.IconDashboard1{
+    position: absolute;
+    bottom: -5px;
+    left: 100px;
+}
+
+.IconDashboard2{
+    position: absolute;
+    bottom: -5px;
+    left: 100px;
+}
+
+.IconDashboard3{
+    position: absolute;
+    bottom: -5px;
+    left: 100px;
+}
+
+.IconDashboard4{
+    position: absolute;
+    bottom: -5px;
+    left: 100px;
+}
+
+.RecentText{
+  font-size: 30px;
+}

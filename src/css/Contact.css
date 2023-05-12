@@ -1,0 +1,168 @@
+.contact-form {
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 700px;
+    left: 420px;
+    position: relative;
+    margin-bottom: 80px;
+    border: 3px solid rgb(117, 117, 117);
+    box-shadow: 10px 10px 5px lightblue;
+  }
+  
+  .contact-form label {
+    color: black;
+  }
+  
+  .contact-form .heading {
+    font-size: 30px;
+    color: black;
+    position: relative;
+    margin-bottom: 12px;
+    font-weight: bold;
+    display: block;
+    left: 250px;
+  }
+  
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form label {
+    margin-bottom: 10px;
+    font-size: 20px;
+    position: relative;
+    left: 45px;
+  }
+  
+  textarea {
+    resize: none;
+    height: 80px;
+    width: 200px;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 570px;
+    position: relative;
+    left: 45px;
+    border: 1px solid rgb(117, 117, 117);
+
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff6384;
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .contact-form button[type="submit"] {
+    background-color: #ff6384;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 26px;
+    cursor: pointer;
+    width: 500px;
+    position: relative;
+    margin: 30px;
+    left: 46px;
+  }
+  
+  .contact-form button[type="submit"]:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+
+
+
+  .form {
+    background-color: #fff;
+    box-shadow: 0 10px 60px rgb(218, 229, 255);
+    border: 1px solid rgb(159, 159, 160);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 1.125rem;
+    max-width: 490px;
+    left: 80px;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .form-title {
+    color: #000000;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  
+  .form-paragraph {
+    margin-top: -20px;
+    font-size: 0.9375rem;
+    color: rgb(105, 105, 105);
+  }
+  
+  .drop-container {
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px dashed rgb(171, 202, 255);
+    color: #444;
+    cursor: pointer;
+    transition: background .2s ease-in-out, border .2s ease-in-out;
+    margin-right: 80px;
+  }
+  
+  .drop-container:hover {
+    background: rgba(0, 140, 255, 0.164);
+    border-color: rgba(17, 17, 17, 0.616);
+  }
+  
+  .drop-container:hover .drop-title {
+    color: #222;
+  }
+  
+  .drop-title {
+    color: #444;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    transition: color .2s ease-in-out;
+  }
+  
+  #file-input {
+    width: 350px;
+    max-width: 285px;
+    color: #444;
+    padding: 2px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid rgba(8, 8, 8, 0.288);
+    position: relative;
+    margin-right: 120px;
+  }
+  
+  #file-input::file-selector-button {
+    margin-right: 20px;
+    border: none;
+    background: #084cdf;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: background .2s ease-in-out;
+  }
+  
+  #file-input::file-selector-button:hover {
+    background: #0d45a5;
+  }

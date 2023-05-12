@@ -1,0 +1,90 @@
+.li a{
+  position: relative;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+
+.containerSearch {
+    position: relative;
+    --size-button: 40px;
+  }
+  
+  .input {
+    padding-left: var(--size-button);
+    height: var(--size-button);
+    font-size: 15px;
+    border: none;
+    color: #030303;
+    outline: none;
+    width: var(--size-button);
+    transition: all ease 0.3s;
+    background-color: #efe0e064;
+    box-shadow: 1.5px 1.5px 3px #0e0e0e, -1.5px -1.5px 3px rgb(95 94 94 / 25%), inset 0px 0px 0px #0e0e0e, inset 0px -0px 0px #5f5e5e;
+    border-radius: 50px;
+    cursor: pointer;
+  }
+  
+  .input:focus,
+  .input:not(:invalid) {
+    width: 200px;
+    cursor: text;
+    box-shadow: 0px 0px 0px #0e0e0e, 0px 0px 0px rgb(95 94 94 / 25%), inset 1.5px 1.5px 3px #0e0e0e, inset -1.5px -1.5px 3px #5f5e5e;
+  }
+  
+  .input:focus + .icon,
+  .input:not(:invalid) + .icon {
+    pointer-events: all;
+    cursor: pointer;
+  }
+  
+  .container .icon {
+    position: absolute;
+    width: var(--size-button);
+    height: var(--size-button);
+    top: 0;
+    left: 4;
+    padding: 8px;
+    pointer-events: none;
+    
+  }
+  
+  .container .icon svg {
+    width: 100%;
+    height: 100%;
+  }
+
+.carticon{
+  height: 25px;
+  width: 30px;
+  position: relative;
+  left: 10px;
+  top: 2px;
+}
+
+
+
+
+
+.default {
+  border-color: #e9e9e9;
+  color: black;
+  width: 80px;
+  height: 40px;
+  border: solid;
+  border-radius: 20px;
+}
+
+.default:hover {
+  background: #e7e7e7;
+}
+
+.btnbuttonHeader {
+  border: 2px solid black;
+  background-color: rgb(238, 238, 238);
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+}
+

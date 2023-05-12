@@ -1,0 +1,85 @@
+
+.position{
+    position: relative;
+    bottom: 70px;
+}
+
+.hero-sectioncard {
+    display: flex;
+    min-height: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: #ececec;
+    border-radius: 30px;
+  }
+  .card-container {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+    justify-content: center;
+    
+  }
+  .cardBestSeller {
+    position: relative;
+    list-style: none;
+    gap: 30px;
+    width: 220px;
+    transition: .3s ease;
+  }
+  .cardBestSeller:before {
+    content: "";
+    display: block;
+    padding-bottom: 150%;
+    width: 100%;
+  }
+  .card-background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+    background-size: 350px;
+    background-position: center;
+    filter: brightness(.9) saturate(1) contrast(1);
+    transform-origin: bottom;
+    transform: scale(1) translateZ(0);
+    transition: .3s ease;
+  }
+  .cardBestSeller:hover .card-background {
+    transform: scale(1.15) translateZ(0);
+    background-size: 260px;
+  }
+  .card-container:hover .cardBestSeller:not(:hover) {
+    transform: scale(.9);
+  }
+  .card-container:hover > .cardBestSeller:not(:hover) .card-background,
+  .card-container:hover > .cardBestSeller:not(:hover) .card-category {
+    filter: brightness(.5) saturate(0) contrast(1.2) blur(20px);
+    
+  }
+  .contentBest {
+    top: 50%;
+    left: 0;
+    padding: 25px;
+    position: absolute;
+  }
+  .card-category {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+  }
+  .card-heading {
+    color: #fff;
+    font-size: 25px;
+    line-height: 1;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, .2);
+    border-radius: 100;
+  }
+
+
+
+
