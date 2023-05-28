@@ -65,18 +65,18 @@ function DashboardSale() {
         </button>
 
         <table class="table caption-top bg-white rounded mt-2">
-          <thead>
+          <thead className="Settinglist">
             <tr>
               <th scope="col">Id</th> <th scope="col">Product</th>
               <th scope="col">Category</th> <th scope="col">Price</th>
               <th scope="col">Quantity</th> <th scope="col">SubTotal</th>
               <th scope="col">Buyer's email</th> <th scope="col">Create Order</th>
-              <th scope="col" style={{ position: "relative", left: 20 }}>
+              <th scope="col" >
                 Action
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="Settinglist" >
             <tr>
               <th scope="row">1</th> <td>Backpack Purse</td> <td>backpack</td>{" "}
               <td>140</td>
@@ -94,7 +94,6 @@ function DashboardSale() {
                     width: 30,
                     height: 25,
                     position: "relative",
-                    left: 30,
                   }}
                 ></lord-icon>
               </td>
@@ -116,7 +115,6 @@ function DashboardSale() {
                     width: 30,
                     height: 25,
                     position: "relative",
-                    left: 30,
                   }}
                 ></lord-icon>
               </td>
@@ -138,7 +136,7 @@ function DashboardSale() {
                     width: 30,
                     height: 25,
                     position: "relative",
-                    left: 30,
+                    right:11,
                   }}
               ></lord-icon>
             </tr>
@@ -157,9 +155,9 @@ function DashboardSale() {
                 colors="primary:#e83a30"
                 style={{
                     width: 30,
+                    right:11,
                     height: 25,
                     position: "relative",
-                    left: 30,
                   }}
               ></lord-icon>
             </tr>
@@ -181,7 +179,6 @@ function DashboardSale() {
                     width: 30,
                     height: 25,
                     position: "relative",
-                    left: 30,
                   }}
                 ></lord-icon>
               </td>
@@ -204,7 +201,6 @@ function DashboardSale() {
                     width: 30,
                     height: 25,
                     position: "relative",
-                    left: 30,
                   }}
                 ></lord-icon>
               </td>

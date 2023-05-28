@@ -140,7 +140,7 @@
 .Subtotal{
     position: absolute;
     left: 1100px;
-    bottom: 180px;
+    bottom: 150px;
 }
 
 .Subtotal h5{
@@ -152,8 +152,8 @@
     font-size: 15px;
     color: #c2c2c2;
     position: absolute;
-    margin-left: 950px;
-    bottom: 160px;
+    margin-left: 980px;
+    bottom: 140px;
 }
 
 
@@ -176,8 +176,8 @@
     font-weight: 500;
     color: var(--color);
     position: absolute;
-    margin-left: 1030px;
-    bottom: 60px;
+    margin-left: 1060px;
+    bottom: 50px;
    }
    
    .Checkout button:before {
@@ -209,3 +209,46 @@
     background: #3a0ca3;
     transition: background 0s;
    }
+
+
+
+
+
+
+   .input-groupcupon{
+   }
+
+
+  
+  .input-groupcupon .input {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #000000;
+    font-size: 15px;
+    border: 1px solid #5e4dcd;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submitcupon {
+    min-height: 50px;
+    padding: .5em 1em;
+    border-radius: 0 11px 11px 0;
+    background-color: #5e4dcd;
+    color: #ffffff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submitcupon:hover {
+    background-color: #5e5dcd;
+    color: #fff;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+  

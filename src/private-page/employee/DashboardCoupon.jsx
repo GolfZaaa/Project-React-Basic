@@ -7,11 +7,11 @@ import Form from "react-bootstrap/Form";
 import { Container } from "react-bootstrap";
 import { datatable } from "../../datatable.js";
 import Table from "react-bootstrap/Table";
-import "../../css/DashboardUser.css";
+import "../../css/DashboardCreateCoupon.css";
+import { BiEdit } from "react-icons/bi";
 
 
-
-function DashboardUser() {
+function DashboardCoupon() {
   return (
     <>
       <NavLink to="/">
@@ -20,10 +20,16 @@ function DashboardUser() {
         </div>
       </NavLink>
 
+      <NavLink to="/CreateCoupon">
+        <div className="CreateCoupon">
+          <button> Create </button>
+        </div>
+      </NavLink>
+
       <div className="px-3">
         <div className="container-fluid"></div>
-        <span className="ListText">List User</span>
-        
+        <span className="ListText">List Coupon</span>
+
         <button className="download-buttonUser">
           <div className="docsUser">
             <svg
@@ -65,46 +71,69 @@ function DashboardUser() {
         </button>
 
         <table class="table caption-top bg-white rounded mt-2">
-          <thead className="Settinglist">
+          <thead className="middle">
             <tr >
-              <th scope="col">Id</th> <th scope="col">UserName</th>
-              <th scope="col">Email</th> <th scope="col">Phone number</th>
-              <th scope="col">Register date</th> 
+              <th scope="col" >Id</th> <th scope="col">NameCoupon</th>
+              <th scope="col">Discount</th> <th scope="col">Amount</th>
+              <th scope="col">Register date</th> <th scope="col">Setting</th>
             </tr>
           </thead>
-          <tbody className="Settinglist">
-            <tr>
-              <th scope="row">1</th>  <td>Golf</td>
-              <td>golf_1234_ag@hotmail.com</td>
-              <td>081-841-1923</td>
+          <tbody className="middle">
+            <tr >
+              <th scope="row">1</th> <td>ASH19AJ</td>
+              <td>20%</td> <td>54</td>
               <td>1/10/2023</td>
+              <td>
+              <NavLink to="/UpdateCoupon">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">2</th> <td>Wande</td>
-              <td>wande@hotmail.com</td>
-              <td>092-185-1823</td>
+              <th scope="row">2</th> <td>N1JAAMW3</td>
+              <td>40%</td> <td>17</td>
               <td>2/10/2023</td>
+              <td>
+                 <NavLink to="/UpdateCoupon">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">3</th> <td>Ganda</td>               <td>Ganda@hotmail.com</td>
-              <td>071-485-1283</td>
+              <th scope="row">3</th> <td>OJW8EQAC</td> <td>15%</td> <td>4</td>
               <td>7/10/2023</td>
+              <td>
+              <NavLink to="/UpdateCoupon">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">4</th> <td>Bowling</td> <td>Bowlingag@hotmail.com</td>
-              <td>061-486-9172</td>
+              <th scope="row">4</th> <td>KMM0A2PR</td> <td>30%</td> <td>71</td>
               <td>3/10/2023</td>
+              <td>
+              <NavLink to="/UpdateCoupon">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">5</th> <td>Bucket</td> <td>Bucketag@hotmail.com</td>
-              <td>091-296-1214</td>
+              <th scope="row">5</th> <td>S7YQH1LA</td> <td>10%</td> <td>21</td>
               <td>4/10/2023</td>
-
+              <td>
+              <NavLink to="/UpdateCoupon">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">6</th> <td>Crossbody</td> <td>Crossbody@hotmail.com</td>
-              <td>062-119-1428</td>
+              <th scope="row">6</th> <td>UI91VAZI</td> <td>5%</td> <td>70</td>
               <td>5/10/2023</td>
+              <td>
+              <NavLink to="/UpdateCoupon">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -113,4 +142,4 @@ function DashboardUser() {
   );
 }
 
-export default DashboardUser;
+export default DashboardCoupon;
