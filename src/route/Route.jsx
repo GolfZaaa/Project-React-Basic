@@ -56,7 +56,7 @@ export const PublicRoute = [
     },
     {
         id: '9',
-        path: '/Error',
+        path: '*',
         element: <Error />,
     },
     {
