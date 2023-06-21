@@ -1,0 +1,133 @@
+.CreateCoupon button {
+    --color: #0000ff;
+    font-family: inherit;
+    display: inline-block;
+    width: 8em;
+    height: 2.4em;
+    line-height: 2.5em;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    position: absolute;
+    margin-left: 990px;
+    bottom: 650px;
+
+   }
+   
+   .CreateCoupon button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 150px;
+    width: 200px;
+    border-radius: 30%;
+   }
+   
+   .CreateCoupon button:hover {
+    color: #fff;
+   }
+   
+   .CreateCoupon button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .CreateCoupon button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .CreateCoupon button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+
+   .cardlistcoupon{
+	margin-bottom: 20px;
+}
+
+
+.cardlistcoupon{
+    background-color: #efefef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 1100px;
+    height: 400px;
+    left: 140px;
+    position: relative;
+    top: 60px;
+    margin-bottom: 130px;
+    box-shadow: 10px 10px 5px lightblue;
+    border: 3px solid rgb(117, 117, 117);
+}
+
+
+
+.middle{
+    text-align: center;
+}
+
+
+
+.CreatelistCoupon button {
+    --color: #337bf7;
+    font-family: inherit;
+    display: inline-block;
+    width: 47em;
+    height: 2.8em;
+    line-height: 2.5em;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    border: 2px solid var(--color);
+    transition: color .5s;
+    z-index: 1;
+    font-size: 20px;
+    border-radius: 6px;
+    font-weight: 500;
+    color: var(--color);
+    position: absolute;
+    margin-left: -90px;
+    bottom: -105px;
+   }
+   
+   .CreatelistCoupon button:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background: var(--color);
+    height: 1650px;
+    width: 2100px;
+    border-radius: 40px;
+   }
+   
+   .CreatelistCoupon button:hover {
+    color: #fff;
+   }
+   
+   .CreatelistCoupon button:before {
+    top: 100%;
+    left: 100%;
+    transition: all .7s;
+   }
+   
+   .CreatelistCoupon button:hover:before {
+    top: -30px;
+    left: -30px;
+   }
+   
+   .CreatelistCoupon button:active:before {
+    background: #3a0ca3;
+    transition: background 0s;
+   }
+
+

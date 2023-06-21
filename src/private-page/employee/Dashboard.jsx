@@ -89,6 +89,50 @@ function Dashboard() {
             </NavLink>
             </div>
           </div>
+          
+          <div className="dashpositon">
+          <div className="row g-3">
+            <div className="col-md-3 p-1">
+            </div>
+            <div className="col-md-3 p-1">
+            <NavLink  to="/Coupon">
+              <div className="cardDash1">
+                <div className="textcard1">
+                  <h3 className="fs-2">30</h3> <p className="fs-5">Coupon</p>
+                  <div className="IconDashboard1">
+                    <lord-icon
+                     src="https://cdn.lordicon.com/cjieiyzp.json"
+                      trigger="loop-on-hover"
+                      colors="primary:#121331,secondary:#08a88a"
+                      style={{ width: 100, height: 100 }}
+                    ></lord-icon>
+                  </div>
+                </div>
+              </div>
+            </NavLink>
+            </div>
+            <div className="col-md-3 p-1">
+            <NavLink  to="/Brand">
+              <div className="cardDash3">
+                <div className="textcard3">
+                  <h3 className="fs-2">220</h3>
+                  <p className="fs-5">Brand</p>
+                  <div className="IconDashboard3">
+                    <lord-icon
+                      src="https://cdn.lordicon.com/yyecuati.json"
+                      trigger="loop-on-hover"
+                      style={{ width: 100, height: 100 }}
+                    ></lord-icon>
+                  </div>
+                </div>
+              </div>
+              </NavLink>
+            </div>
+            <div className="col-md-3 p-1">
+            </div>
+          </div>
+          </div>
+
         </div>
         <span className="RecentText">Recent Orders</span>
         <table class="table caption-top bg-white rounded mt-2">

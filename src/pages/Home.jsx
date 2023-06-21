@@ -105,7 +105,7 @@ const Home = () => {
                 Trending <span className="section-intro__style">Product</span>
               </h2>
             </div>
-            <div className="row">
+            <div className="row" >
               <div className="col-md-6 col-lg-4 col-xl-3">
                 <div className="card text-center card-product">
                   <div className="card-product__img" data-aos="zoom-out-up">
@@ -168,7 +168,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 col-xl-3">
+              <div className="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out-up">
                 <div className="card text-center card-product">
                   <div className="card-product__img">
                     <img className="card-img" src={Imagehome3} alt="" />
@@ -199,7 +199,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 col-xl-3">
+              <div className="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out-up">
                 <div className="card text-center card-product">
                   <div className="card-product__img">
                     <img className="card-img" src={Imagehome4} alt="" />
@@ -230,7 +230,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 col-xl-3">
+              <div className="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out-up">
                 <div className="card text-center card-product">
                   <div className="card-product__img">
                     <img className="card-img" src={Imagehome5} alt="" />
@@ -261,7 +261,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 col-xl-3">
+              <div className="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out-up">
                 <div className="card text-center card-product">
                   <div className="card-product__img">
                     <img className="card-img" src={Imagehome6} alt="" />
@@ -292,7 +292,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 col-xl-3">
+              <div className="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out-up"> 
                 <div className="card text-center card-product">
                   <div className="card-product__img">
                     <img className="card-img" src={Imagehome7} alt="" />
@@ -323,7 +323,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-6 col-lg-4 col-xl-3">
+              <div className="col-md-6 col-lg-4 col-xl-3" data-aos="zoom-out-up">
                 <div className="card text-center card-product">
                   <div className="card-product__img">
                     <img className="card-img" src={Imagehome8} alt="" />
@@ -373,6 +373,7 @@ const Home = () => {
           data-anchor-target="#parallax-1"
           data-300-top="background-position: 20px 30px"
           data-top-bottom="background-position: 0 20px"
+          data-aos="zoom-out-up" 
         >
           <div className="container">
             <div className="row">
@@ -391,70 +392,74 @@ const Home = () => {
         </section>
         {/* ================ offer section end ================= */}
         {/* ================ Best Selling item  carousel ================= */}
-        <section className="section-margin calc-60px">
-          <div className="container">
-            <div className="section-intro pb-60px">
-              <p>Popular Item in the market</p>
-              <h2>
+        <section className="section-margin calc-60px" >
+          <div className="container" >
+            <div className="section-intro pb-60px" data-aos="zoom-out-up">
+              <p data-aos="zoom-out-up">Popular Item in the market</p>
+              <h2 data-aos="zoom-out-up">
                 Best <span className="section-intro__style">Sellers</span>
               </h2>
             </div>
 
-            <section className="hero-sectioncard">
-              <div className="card-container">
-                <div className="cardBestSeller">
+            <section className="hero-sectioncard" data-aos="zoom-out-up">
+              <div className="card-container" >
+                <div className="cardBestSeller" data-aos="zoom-out-up">
                   <div
                     className="card-background"
+                    data-aos="zoom-out-up"
                     style={{
                       backgroundImage: "url(" + Imagehomebestsell4 + ")",
                       backgroundSize: "cover",
                     }}
                   />
                   <div className="contentBest">
-                    <div className="card-category">CITY ESCAPE</div>
-                    <h3 className="card-heading">No Plans For Today Tee</h3>
+                    <div className="card-category" data-aos="zoom-out-up">CITY ESCAPE</div>
+                    <h3 className="card-heading" data-aos="zoom-out-up">No Plans For Today Tee</h3>
                   </div>
                 </div>
 
-                <div className="cardBestSeller">
+                <div className="cardBestSeller" data-aos="zoom-out-up">
                   <div
                     className="card-background"
+                    data-aos="zoom-out-up"
                     style={{
                       backgroundImage: "url(" + Imagehomebestsell3 + ")",
                       backgroundSize: "cover",
                     }}
                   />
                   <div className="contentBest">
-                    <div className="card-category">RUN IT</div>
-                    <h3 className="card-heading">Boneless Hoodie</h3>
+                    <div className="card-category" data-aos="zoom-out-up">RUN IT</div>
+                    <h3 className="card-heading" data-aos="zoom-out-up">Boneless Hoodie</h3>
                   </div>
                 </div>
 
-                <div className="cardBestSeller">
+                <div className="cardBestSeller" data-aos="zoom-out-up">
                   <div
                     className="card-background"
+                    data-aos="zoom-out-up"
                     style={{
                       backgroundImage: "url(" + Imagehomebestsell2 + ")",
                       backgroundSize: "cover",
                     }}
                   />
                   <div className="contentBest">
-                    <div className="card-category">TWO-TONE STENCIL</div>
-                    <h3 className="card-heading">Cream Polo Sweat</h3>
+                    <div className="card-category" data-aos="zoom-out-up">TWO-TONE STENCIL</div>
+                    <h3 className="card-heading" data-aos="zoom-out-up">Cream Polo Sweat</h3>
                   </div>
                 </div>
 
-                <div className="cardBestSeller">
+                <div className="cardBestSeller" data-aos="zoom-out-up">
                   <div
                     className="card-background"
+                    data-aos="zoom-out-up"
                     style={{
                       backgroundImage: "url(" + Imagehomebestsell1 + ")",
                       backgroundSize: "cover",
                     }}
                   />
                   <div className="contentBest">
-                    <div className="card-category">W C ESC DRESS</div>
-                    <h3 className="card-heading">Cream Polo Sweat</h3>
+                    <div className="card-category" data-aos="zoom-out-up">W C ESC DRESS</div>
+                    <h3 className="card-heading" data-aos="zoom-out-up">Cream Polo Sweat</h3>
                   </div>
                 </div>
               </div>
@@ -466,14 +471,14 @@ const Home = () => {
         <section className="blog">
           <div className="container">
             <div className="section-intro pb-60px">
-              <p>Popular Item in the market</p>
-              <h2>
+              <p data-aos="zoom-out-up"> Popular Item in the market</p>
+              <h2 data-aos="zoom-out-up">
                 Latest <span className="section-intro__style">News</span>
               </h2>
             </div>
             <div className="row">
               <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div className="card card-blog">
+                <div className="card card-blog" data-aos="zoom-out-up">
                   <div className="card-blog__img">
                     <img
                       className="card-img rounded-0"
@@ -508,7 +513,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div className="card card-blog">
+                <div className="card card-blog" data-aos="zoom-out-up">
                   <div className="card-blog__img">
                     <img
                       className="card-img rounded-0"
@@ -544,7 +549,7 @@ const Home = () => {
                 </div>
               </div>
               <div className="col-md-6 col-lg-4 mb-4 mb-lg-0">
-                <div className="card card-blog">
+                <div className="card card-blog" data-aos="zoom-out-up">
                   <div className="card-blog__img">
                     <img
                       className="card-img rounded-0"
@@ -586,7 +591,7 @@ const Home = () => {
         {/* ================ Subscribe section start ================= */}
         <section className="subscribe-position">
           <div className="container">
-            <div className="subscribe text-center">
+            <div className="subscribe text-center" data-aos="zoom-out-up">
               <h3 className="subscribe__title">Get Update From Anywhere</h3>
               <p>
                 Bearing Void gathering light light his eavening unto dont afraid

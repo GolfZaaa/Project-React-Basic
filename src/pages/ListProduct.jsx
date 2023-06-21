@@ -294,7 +294,7 @@ const ListProduct = () => {
           className="table caption-top bg-white rounded mt-2 backgroundtable"
           align="center"
         >
-          <thead>
+          <thead className="Settinglist">
             <tr>
               <th scope="col">Product Id</th>
               <th scope="col">Product Name</th>
@@ -302,8 +302,7 @@ const ListProduct = () => {
               <th scope="col">Quantity</th>
               <th scope="col">Price</th>
               {/* <th scope="col">quantitytotal</th> */}
-              <th scope="col" className="Settinglist">
-                {" "}
+              <th scope="col">
                 Setting
               </th>
             </tr>
@@ -311,7 +310,7 @@ const ListProduct = () => {
 
           {products.map(function fn(product) {
             return (
-              <tbody>
+              <tbody className="Settinglist">
                 <tr key={product.id}>
                   <th scope="row">{product.id} </th>
                   <td>{product.name}</td>

@@ -32,7 +32,12 @@ const Cart = () => {
                     <td>
                       <div className="media">
                         <div className="d-flex">
-                          <img src={Imagehome8} alt="" width={120} height={120} />
+                          <img
+                            src={Imagehome8}
+                            alt=""
+                            width={120}
+                            height={120}
+                          />
                         </div>
                         <div className="media-body">
                           <p>Minimalistic shop for multipurpose use</p>
@@ -70,7 +75,12 @@ const Cart = () => {
                     <td>
                       <div className="media">
                         <div className="d-flex">
-                          <img src={Imagehome5} alt=""  width={120} height={120}/>
+                          <img
+                            src={Imagehome5}
+                            alt=""
+                            width={120}
+                            height={120}
+                          />
                         </div>
                         <div className="media-body">
                           <p>Minimalistic shop for multipurpose use</p>
@@ -113,7 +123,12 @@ const Cart = () => {
                     <td>
                       <div className="media">
                         <div className="d-flex">
-                        <img src={Imagehome2} alt=""  width={120} height={120}/>
+                          <img
+                            src={Imagehome2}
+                            alt=""
+                            width={120}
+                            height={120}
+                          />
                         </div>
                         <div className="media-body">
                           <p>Minimalistic shop for multipurpose use</p>
@@ -160,11 +175,38 @@ const Cart = () => {
                     </div>
                   </NavLink>
 
+
+
+
+
+
+
                   <div className="Subtotal">
-                    <h5>Subtotal :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $1080.00</h5>
+                  <div className="input-groupcupon">
+                    <input
+                      type="text"
+                      className="input"
+                      id="Email"
+                      name="Email"
+                      placeholder="Coupon"
+                      autoComplete="off"
+                    />
+                    <input
+                      className="button--submitcupon"
+                      defaultValue="Subscribe"
+                      type="submit"
+                    />
                   </div>
-                  <h5 className="TextbuttonSubtotal"> Taxes and shipping calculated at checkout </h5>
                   
+                    <h5>
+                      Subtotal :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      $1080.00
+                    </h5>
+                  </div>
+                  <h5 className="TextbuttonSubtotal">
+                    {" "}
+                    Taxes and shipping calculated at checkout{" "}
+                  </h5>
                 </tbody>
                 <tbody>
                   <tr className="linebutton">
@@ -173,10 +215,6 @@ const Cart = () => {
                     <td></td>
                   </tr>
                 </tbody>
-
-
-                  
-
               </table>
             </div>
           </div>

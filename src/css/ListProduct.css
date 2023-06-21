@@ -276,12 +276,12 @@
 
 .Settinglist{
     position: relative;
-    left: 120px;
+    text-align: center;
 }
 
 .backgroundtable{
     position: relative;
-    left: 50px;
+    left: 40px;
     top: 140px;
     margin-bottom: 30px;
 }

@@ -7,9 +7,11 @@ import Form from "react-bootstrap/Form";
 import { Container } from "react-bootstrap";
 import { datatable } from "../../datatable.js";
 import Table from "react-bootstrap/Table";
-import "../../css/DashboardComment.css";
+import "../../css/DashboardCreateCoupon.css";
+import { BiEdit } from "react-icons/bi";
 
-function DashboardComment() {
+
+function DashboardBrand() {
   return (
     <>
       <NavLink to="/">
@@ -18,13 +20,18 @@ function DashboardComment() {
         </div>
       </NavLink>
 
+      <NavLink to="/CreateBrand">
+        <div className="CreateCoupon">
+          <button> Create </button>
+        </div>
+      </NavLink>
+
       <div className="px-3">
         <div className="container-fluid"></div>
-        <span className="ListText">List Comment</span>
+        <span className="ListText">List Brand</span>
 
-
-        <button className="download-buttonComment">
-          <div className="docsComment">
+        <button className="download-buttonUser">
+          <div className="docsUser">
             <svg
               className="css-i6dzq1"
               strokeLinejoin="round"
@@ -44,7 +51,7 @@ function DashboardComment() {
             </svg>{" "}
             Docs
           </div>
-          <div className="downloadComment">
+          <div className="downloadUser">
             <svg
               className="css-i6dzq1"
               strokeLinejoin="round"
@@ -63,48 +70,67 @@ function DashboardComment() {
           </div>
         </button>
 
-
         <table class="table caption-top bg-white rounded mt-2">
-          <thead className="Settinglist">
-            <tr>
-              <th scope="col">Id</th>
-              <th scope="col">Email</th> <th scope="col">Text Comment</th>
-              <th scope="col">Star Score</th> <th scope="col">Comment date</th>
+          <thead className="middle">
+            <tr >
+              <th scope="col" >Id</th> <th scope="col">Name Brand</th>
+              <th scope="col">Register date</th> <th scope="col">Setting</th>
             </tr>
           </thead>
-          <tbody className="Settinglist">
-            <tr>
-              <th scope="row">1</th>
-              <td>golf_1234_ag@hotmail.com</td>
-              <td>real-life situations where you have to state your opinion, e.g. a friend asks you for advice, your boss wants.</td>
-              <td>3</td> <td>1/10/2023</td>
+          <tbody className="middle">
+            <tr >
+              <th scope="row">1</th> <td>CHANEL</td>
+              <td>1/10/2023</td>
+              <td>
+              <NavLink to="/UpdateBrand">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">2</th>
-              <td>wande@hotmail.com</td>
-              <td>hear your opinion on a business matter. In English lessons, this is also a popular way of testing your English writing skills.</td>
-              <td>3</td> <td>2/10/2023</td>
+              <th scope="row">2</th> <td>CHIRSTIAN</td>
+              <td>2/10/2023</td>
+              <td>
+              <NavLink to="/UpdateBrand">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">3</th> <td>Ganda@hotmail.com</td>
-              <td>Think about the topic first. What's your opinion? What arguments can you use to support your ideas.</td>
-              <td>1</td> <td>7/10/2023</td>
+              <th scope="row">3</th> <td>PRADA</td> 
+              <td>7/10/2023</td>
+              <td>
+              <NavLink to="/UpdateBrand">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">4</th>
-              <td>Bowlingag@hotmail.com</td>
-              <td>Define the problem you are going to discuss and provide a short overview on what you think and why.</td>
-              <td>4</td> <td>3/10/2023</td>
+              <th scope="row">4</th> <td>CARTIER</td> 
+              <td>3/10/2023</td>
+              <td>
+              <NavLink to="/UpdateBrand">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">5</th> <td>Bucketag@hotmail.com</td>
-              <td>state your opinion and give examples and arguments that support your opinion statement reason example</td>
-              <td>5</td> <td>4/10/2023</td>
+              <th scope="row">5</th> <td>ROLEX</td> 
+              <td>4/10/2023</td>
+              <td>
+              <NavLink to="/UpdateBrand">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
             <tr>
-              <th scope="row">6</th> <td>Crossbody@hotmail.com</td>
-              <td>find advantages and disadvantages comment on somebody's opinion (usually in a negative way).</td>
-              <td>2</td> <td>5/10/2023</td>
+              <th scope="row">6</th> <td>BVLGARI</td> 
+              <td>5/10/2023</td>
+              <td>
+              <NavLink to="/UpdateBrand">
+                <BiEdit size={25}  color="red"/>
+                </NavLink>
+              </td>
             </tr>
           </tbody>
         </table>
@@ -113,4 +139,4 @@ function DashboardComment() {
   );
 }
 
-export default DashboardComment;
+export default DashboardBrand;
